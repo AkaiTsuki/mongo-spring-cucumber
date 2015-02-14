@@ -3,9 +3,12 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Mongo-Spring-Cucumber</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-route.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script>
         angular.module('MscWebApp', ['ngRoute'])
                 .config(['$routeProvider', function ($routeProvider) {
@@ -20,11 +23,54 @@
                 });
 
     </script>
+    <style>
+        body {
+            padding-top: 50px;
+        }
+
+        .starter-template {
+            padding: 40px 15px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<h1>Welcome To Mongo-Spring-Cucumber</h1>
-<a href="#/navigation">Navigation</a>
 
-<div ng-view></div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Mongo-Spring-Cucumber</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container">
+    <div class="starter-template">
+        <h1>Welcome To Mongo-Spring-Cucumber</h1>
+
+        <p class="lead">This is a demo project for the following technology<br>Mongo, SpringMVC, Cucumber</p>
+
+    </div>
+    <a id="navigationLink" href="#/navigation">Navigation</a>
+
+    <div ng-view></div>
+</div>
+
+
 </body>
 </html>
