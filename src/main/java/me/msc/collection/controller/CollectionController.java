@@ -20,7 +20,7 @@ public class CollectionController {
     @Autowired
     CustomerRepository customerRepository;
 
-    @RequestMapping("/customers")
+    @RequestMapping("/customer")
     public
     @ResponseBody
     List<Customer> customers() {

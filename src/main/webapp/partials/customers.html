@@ -1,0 +1,11 @@
+<div ng-controller="CustomerController">
+    <ul ng-model="customers">
+        <h2>Customer List</h2>
+        <li ng-repeat="c in customers">
+            <span>{{c.lastName}}</span>
+            <span>, </span>
+            <span>{{c.firstName}}</span>
+        </li>
+    </ul>
+</div>
+
