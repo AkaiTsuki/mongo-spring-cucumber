@@ -35,7 +35,7 @@ public class ViewCustomerStepDef {
     public void I_click_the_navigation_link() throws Throwable {
         assertNotNull(navigationLink);
         navigationLink.click();
-        customerLink = BrowserDriver.waitForElement(BrowserDriver.findElementById("customerLink"));
+        customerLink = BrowserDriver.waitUntilFindById("customerLink", 10);
     }
 
     @Then("^the customer link should show up$")
