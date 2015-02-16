@@ -12,7 +12,6 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         format = {"html:build/cucumber-html-report",
                 "json:build/cucumber-json-report.json"},
-        features = {"src/test/java/me/msc/cucumber/features"},
-        tags = {"~@Ignore"})
+        features = {"src/test/java/me/msc/cucumber/features"})
 public class RunCukesTest {
 }
