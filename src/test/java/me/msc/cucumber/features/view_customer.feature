@@ -14,3 +14,8 @@ Feature: View Customers
     Given I have a first name "John"
     When I find customers with this first name
     Then I should get a customer called "John Smith"
+
+  @RestApi
+  Scenario: View Customer Via Rest Api
+    When I am calling rest api to find all customers with url "http://localhost:8080/mongo/collection/customer"
+    Then a list of customers should returned by the api

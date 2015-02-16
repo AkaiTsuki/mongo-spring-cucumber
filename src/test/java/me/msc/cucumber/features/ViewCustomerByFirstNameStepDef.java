@@ -1,6 +1,5 @@
 package me.msc.cucumber.features;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -8,16 +7,16 @@ import me.msc.collection.domain.Customer;
 import me.msc.collection.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.web.WebAppConfiguration;
 
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 /**
  * Created by jiachiliu on 2/15/15.
  */
-@WebAppConfiguration
+
 @ContextConfiguration("classpath:cucumber.xml")
 public class ViewCustomerByFirstNameStepDef {
 

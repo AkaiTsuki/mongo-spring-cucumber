@@ -9,4 +9,6 @@
 
     <import resource="file:src/main/webapp/WEB-INF/spring-data.xml"/>
 
+    <bean id="restTemplate" class="org.springframework.web.client.RestTemplate"/>
+
 </beans>
