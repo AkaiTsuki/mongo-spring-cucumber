@@ -9,10 +9,11 @@ import java.util.List;
 /**
  * Created by jiachiliu on 2/12/15.
  */
+
 @Repository
 public interface CustomerRepository extends MongoRepository<Customer, String> {
 
-    public Customer findByFirstName(String firstName);
+    public List<Customer> findByFirstName(String firstName);
 
     public List<Customer> findByLastName(String lastName);
 }

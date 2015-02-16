@@ -1,4 +1,4 @@
-package me.msc.cucumber.features;
+package me.msc.cucumber;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
