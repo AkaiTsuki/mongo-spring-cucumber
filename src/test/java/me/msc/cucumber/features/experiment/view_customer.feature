@@ -1,3 +1,4 @@
+@Experiment
 Feature: View Customers
 
   @Functional

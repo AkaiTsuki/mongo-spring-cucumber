@@ -1,4 +1,4 @@
-package me.msc.cucumber.features;
+package me.msc.cucumber.features.experiment;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
