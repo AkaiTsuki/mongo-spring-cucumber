@@ -1,5 +1,6 @@
 package me.msc.cucumber.features.overview;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -8,6 +9,7 @@ import me.msc.overview.Calculator;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.Assert.*;
 
@@ -45,4 +47,11 @@ public class DataTableStepDef {
         assertEquals(expected, actualResults);
     }
 
+    @Given("^I have a table to be use as a map$")
+    public void I_have_a_table_to_be_use_as_a_map(Map<Integer, Integer> map) throws Throwable {
+        formulaList = new LinkedList<String>();
+        for(Map.Entry<Integer, Integer> entry: map.entrySet()){
+            formulaList.add(String.format("%d %s %d", entry.getKey(), "+", entry.getValue()));
+        }
+    }
 }

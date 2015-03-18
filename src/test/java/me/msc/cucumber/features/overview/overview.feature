@@ -53,6 +53,16 @@ Feature: Cucumber Overview
       | 42 |
       | 2  |
 
+  Scenario: Data Table - HashMap
+    Given I have a table to be use as a map
+      | 1 | 2 |
+      | 3 | 4 |
+    When I have my data table calculator
+    And I compute all the rows
+    Then I should get a list of results
+      | 3 |
+      | 7 |
+
   Scenario: Doc String
     Given I have a formula in json format
     """
