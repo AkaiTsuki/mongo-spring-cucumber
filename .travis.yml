@@ -7,5 +7,5 @@ services:
 
 before_script:
   - sleep 15
-  - mongo mydb --eval "db.customers.insert([{firstName: 'John', lastName: 'Smith'}, {firstName: 'Joe', lastName: 'Smith'}, {firstName: 'Bob', lastName: 'Smith'}, {firstName: 'Ted', lastName: 'Smith'}]);"
+  - mongo mydb --eval "db.customers.insert([ { firstName: 'John', lastName: 'Smith'} ]);"
 
