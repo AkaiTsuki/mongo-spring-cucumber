@@ -1,6 +1,10 @@
 language: java
 jdk:
-  - oraclejdk8
   - oraclejdk7
-  - openjdk7
-  - openjdk6
+
+services:
+  - mongodb
+
+before_script:
+  - mongo mydb --eval 'db.customers.insert([{firstName: "John", lastName: "Smith"}, {firstName: "Joe", lastName: "Smith"}, {firstName: "Bob", lastName: "Smith"}, {firstName: "Ted", lastName: "Smith"}]);'
+
