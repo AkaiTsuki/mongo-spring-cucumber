@@ -1,8 +1,11 @@
-@Experiment
+@Demo
 Feature: View Customers
+
+  View Customers by different methods
 
   @Functional
   Scenario: View Customer
+    View all customer
     Given I am navigate to application
     And the page loaded
     When I click the navigation link

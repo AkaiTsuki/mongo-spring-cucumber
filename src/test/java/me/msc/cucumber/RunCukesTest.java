@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        format = {"html:build/cucumber-html-report",
+        plugin = {"html:build/cucumber-html-report",
                 "json:build/cucumber-json-report.json"},
-        features = {"src/test/java/me/msc/cucumber/features"}, tags = {"~@Experiment"})
+        features = {"src/test/java/me/msc/cucumber/features"}, tags = {"@Overview"})
 public class RunCukesTest {
 }
