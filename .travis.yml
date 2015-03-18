@@ -6,5 +6,5 @@ services:
   - mongodb
 
 before_script:
-  - mongo mydb initDB.js
+  - mongo mydb scripts/initDB.js
 

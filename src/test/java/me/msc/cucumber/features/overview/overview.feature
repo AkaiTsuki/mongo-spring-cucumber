@@ -88,3 +88,14 @@ Feature: Cucumber Overview
     Given I have a formula "1 + 1"
     When I have my calculator
     Then I should get 2
+
+
+  ############## Transform ############
+  Scenario: Simple Transform
+    Given I have a string number "1"
+    Then I should get the transformed string as 1
+
+  Scenario: Object Transform
+    Given I have a formula "1 + 1" to transform
+    When I have my transform calculator
+    Then I should get cacluated result 2
