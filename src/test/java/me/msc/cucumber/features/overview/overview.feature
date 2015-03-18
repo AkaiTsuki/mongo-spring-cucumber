@@ -4,6 +4,7 @@ Feature: Cucumber Overview
   In order to test if my code meet PO's acceptance criteria
   I want have an automation framework to test the program's behavior
 
+  ############## Basic ############
   Scenario: Add Two Numbers
   A first taste on cucumber
     Given I have a formula "1 + 1"
@@ -22,6 +23,7 @@ Feature: Cucumber Overview
     * I have my calculator
     * I should get 5
 
+    ############## Outline ############
   Scenario Outline: Calculate Two Numbers
   Calculate two numbers
     Given I have a formula "<formula>"
@@ -38,6 +40,7 @@ Feature: Cucumber Overview
     | 10 - 1  | 9      |
     | 3 - 2   | 1      |
 
+    ############## Data Table ############
   Scenario: Data Table
     Given I have a number table with operator
       | left | right | op |
@@ -63,6 +66,7 @@ Feature: Cucumber Overview
       | 3 |
       | 7 |
 
+    ############## Doc String ############
   Scenario: Doc String
     Given I have a formula in json format
     """
@@ -76,3 +80,11 @@ Feature: Cucumber Overview
 #    When I have my calculator
     Then I should get result as 4
 
+    ############## Hook and Tag ############
+  @Invalid
+  @Hooks
+  Scenario: Hook
+  With Before and After Hook
+    Given I have a formula "1 + 1"
+    When I have my calculator
+    Then I should get 2
