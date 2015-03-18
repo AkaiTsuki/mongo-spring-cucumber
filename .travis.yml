@@ -6,6 +6,5 @@ services:
   - mongodb
 
 before_script:
-  - sleep 15
   - mongo mydb initDB.js
 
