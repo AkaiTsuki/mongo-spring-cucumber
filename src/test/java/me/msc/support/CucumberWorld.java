@@ -23,6 +23,10 @@ public class CucumberWorld {
         entities.put(key, val);
     }
 
+    public void clean() {
+        this.entities = new HashMap<String, Object>();
+    }
+
     public Map<String, Object> getEntities() {
         return entities;
     }

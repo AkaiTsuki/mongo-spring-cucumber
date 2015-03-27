@@ -10,3 +10,7 @@ Feature: Step Communication
     Then It should saved into world object
     When I read a user from world in other definition file with username "cucumber"
     Then I should get a user object with username "cucumber"
+
+  Scenario: Test Scenario 2
+      Given I have a username "cucumber"
+      Then there should be no user with same username in the world

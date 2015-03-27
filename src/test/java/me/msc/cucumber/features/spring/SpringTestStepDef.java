@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 /**
  * Created by jliu on 3/27/2015.
@@ -39,6 +40,10 @@ public class SpringTestStepDef {
         assertNotNull(cucumberWorld.get(username));
     }
 
-
+    @Then("^there should be no user with same username in the world$")
+    public void there_should_be_no_user_with_same_username_in_the_world() throws Throwable {
+        assertNotNull(username);
+        assertNull(cucumberWorld.get(username));
+    }
 
 }
