@@ -21,7 +21,7 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
     testCompile 'info.cukes:cucumber-java:1.2.0'
     testCompile 'info.cukes:cucumber-junit:1.2.0'
-    testCompile 'info.cukes:cucumber-spring:1.1.2'
+    testCompile 'info.cukes:cucumber-spring:1.1.5'
     testCompile 'org.seleniumhq.selenium:selenium-java:2.44.0'
     testCompile 'org.springframework:spring-test:3.2.4.RELEASE'
 }

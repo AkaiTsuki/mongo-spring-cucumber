@@ -4,6 +4,12 @@ package me.msc.overview;
  * Created by jiachiliu on 3/17/15.
  */
 public class Calculator {
+    /**
+     * Calculate the given formula
+     *
+     * @param formula a formula has the format "a + b"
+     * @return the calculated result
+     */
     public int compute(String formula) {
         String[] tokens = formula.split(" ");
 
