@@ -24,7 +24,7 @@ public class CucumberWorld {
     }
 
     public void clean() {
-        this.entities = new HashMap<String, Object>();
+        this.entities.clear();
     }
 
     public Map<String, Object> getEntities() {
